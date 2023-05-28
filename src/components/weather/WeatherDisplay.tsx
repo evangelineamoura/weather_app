@@ -17,6 +17,8 @@ export default function WeatherDisplay({ weatherData }: WeatherDisplayProps) {
       <h1>
         {weatherData.name} ({weatherData.sys.country})
       </h1>
+      <img src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} alt="Weather Icon"/>
+      <h1>{weatherData.weather[0].description}</h1>
       <ul>
         <li>Temperature: {Math.round(weatherData.main.temp)}°</li>
         <li>Feels like: {Math.round(weatherData.main.feels_like)}°</li>

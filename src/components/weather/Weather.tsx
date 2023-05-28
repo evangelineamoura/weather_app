@@ -38,11 +38,20 @@ export type WeatherDataProps = {
   sys: {
     country: string;
   };
+  weather: {
+    0: {
+      id: number;
+      description: string;
+      icon: string;
+    }
+  }
 };
+
 
 export default function Weather() {
   const [location, setLocation] = useState<string>("");
   const [weatherData, setWeatherData] = useState<WeatherDataProps | null>(null);
+  
 
   const handleInputChange: LocationInputProps["handleInputChange"] = (e) => {
     console.log(location);

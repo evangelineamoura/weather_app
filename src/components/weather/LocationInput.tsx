@@ -11,7 +11,7 @@ export default function LocationInput({
 }: LocationInputProps) {
   return (
     <section>
-      <h2>Weather Forecast 🌡</h2>
+      <h2>Weather Forecast</h2>
       <h3>Type in your city!</h3>
       <input
         type="text"
