@@ -17,7 +17,7 @@ export default function LocationInput({
         type="text"
         value={input}
         onChange={handleInputChange}
-        placeholder="London"
+        placeholder="e.g. London, Paris etc."
       />
     </section>
   );
