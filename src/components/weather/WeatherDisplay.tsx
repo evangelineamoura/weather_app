@@ -5,14 +5,10 @@ type WeatherDisplayProps = {
 };
 
 export default function WeatherDisplay({ weatherData }: WeatherDisplayProps) {
-  if (!weatherData || !weatherData.main) {
-    return (
-      <div>
-        <h1>No city found!</h1>
-      </div>
-    );
-  }
-  return (
+  if (!weatherData || !weatherData.main || !weatherData.name) {
+    return null;
+  } else {
+   return (
     <section>
       <h1>
         {weatherData.name} ({weatherData.sys.country})
@@ -28,8 +24,9 @@ export default function WeatherDisplay({ weatherData }: WeatherDisplayProps) {
         <li>Humidity: {weatherData.main.humidity}%</li>
       </ul>
     </section>
-  );
-}
+    );
+  }
+};
 /*
  main: {
     temp: number;
