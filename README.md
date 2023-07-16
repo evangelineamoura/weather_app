@@ -7,7 +7,8 @@ You can enter the name of any city in the world and it will show you the weather
 Feel free to play with it here. :) <br/>
 https://evangelineamoura.github.io/weather_app/
 
-![Screen Shot 2023-07-16 at 22 15 48](https://github.com/evangelineamoura/weather_app/assets/124540969/42c2fa55-9abb-44fa-81c2-b18c0bbbd559)
+![Screen Shot 2023-07-16 at 22 15 48](https://github.com/evangelineamoura/weather_app/assets/124540969/c244d746-12ec-425a-a3af-0e2211d31d52)
+
 
 
 ## Tech Stack
